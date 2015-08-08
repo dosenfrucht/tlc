@@ -40,6 +40,8 @@ import Highlevel.Indent
 import Highlevel.Syntax
 import Highlevel.Parser
 
+import Compiler.Exports
+
 
 data Passes = PassLexing
             | PassIndenting
@@ -61,7 +63,7 @@ data PassState = PassState {
     ps_src      :: String,
     ps_toks     :: [Token],
     ps_ast      :: Module,
-    ps_exports  :: [Exports]
+    ps_exports  :: [Export]
 }
 
 type Pass = Pass' ()
@@ -92,7 +94,8 @@ initState = PassState {
 
                 ps_src      = "",
                 ps_toks     = [],
-                ps_ast      = undefined
+                ps_ast      = undefined,
+                ps_exports  = []
             }
 
 
