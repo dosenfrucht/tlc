@@ -14,7 +14,7 @@ x - Todo
 ✓   lexing
 ✓   indentation resolution
 ✓   parsing
-x   compiling imports
+○   compiling imports
 x   rearranging
 x   desugaring
 x   renaming

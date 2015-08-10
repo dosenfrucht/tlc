@@ -1,4 +1,4 @@
-module Highlevel.Token where
+module Highlevel.Token  where
 
 
 import Data.Char
